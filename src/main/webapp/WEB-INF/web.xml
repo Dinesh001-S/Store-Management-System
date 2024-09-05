@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<session-config>
+		<session-timeout>480</session-timeout>
+	</session-config>
+
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>logoutServlet</servlet-name>
+		<servlet-class>servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logoutServlet</servlet-name>
+		<url-pattern>/logoutServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addUserServlet</servlet-name>
+		<servlet-class>servlet.AddUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addUserServlet</servlet-name>
+		<url-pattern>/AddUserServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateUserDetailsServlet</servlet-name>
+		<servlet-class>servlet.UpdateUserDetailsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateUserDetailsServlet</servlet-name>
+		<url-pattern>/UpdateUserDetailsServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addCustomerServlet</servlet-name>
+		<servlet-class>servlet.AddCustomerServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addCustomerServlet</servlet-name>
+		<url-pattern>/AddCustomerServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateCustomerDetailsServlet</servlet-name>
+		<servlet-class>servlet.UpdateCustomerDetailsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateCustomerDetailsServlet</servlet-name>
+		<url-pattern>/UpdateCustomerDetailsServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>addProductServlet</servlet-name>
+		<servlet-class>servlet.AddNewProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addProductServlet</servlet-name>
+		<url-pattern>/AddNewProductServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>customerTotalSpendingServlet</servlet-name>
+		<servlet-class>servlet.CustomerTotalSpendingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customerTotalSpendingServlet</servlet-name>
+		<url-pattern>/CustomerTotalSpendingServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>billServlet</servlet-name>
+		<servlet-class>servlet.BillingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>billServlet</servlet-name>
+		<url-pattern>/BillingServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>displayBillsServlet</servlet-name>
+		<servlet-class>servlet.DisplayBillsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>displayBillsServlet</servlet-name>
+		<url-pattern>/DisplayBillsServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>productReturningServlet</servlet-name>
+		<servlet-class>servlet.ProductReturningServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productReturningServlet</servlet-name>
+		<url-pattern>/ProductReturningServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>productReturnServlet</servlet-name>
+		<servlet-class>servlet.ProductReturnServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productReturnServlet</servlet-name>
+		<url-pattern>/ProductReturnServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>refundServlet</servlet-name>
+		<servlet-class>servlet.RefundServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>refundServlet</servlet-name>
+		<url-pattern>/RefundServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>exchangeServlet</servlet-name>
+		<servlet-class>servlet.ExchangeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>exchangeServlet</servlet-name>
+		<url-pattern>/ExchangeServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>updateInventoryProductServlet</servlet-name>
+		<servlet-class>servlet.UpdateInventoryProductServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateInventoryProductServlet</servlet-name>
+		<url-pattern>/UpdateInventoryProductServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>productPriceDetailsServlet</servlet-name>
+		<servlet-class>servlet.ProductPriceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>productPriceDetailsServlet</servlet-name>
+		<url-pattern>/ProductPriceServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addCategoryServlet</servlet-name>
+		<servlet-class>servlet.AddNewCategoryServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addCategoryServlet</servlet-name>
+		<url-pattern>/AddNewCategoryServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>billListServlet</servlet-name>
+		<servlet-class>servlet.BillListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>billListServlet</servlet-name>
+		<url-pattern>/BillListServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>billReportServlet</servlet-name>
+		<servlet-class>servlet.BillReportServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>billReportServlet</servlet-name>
+		<url-pattern>/BillReportServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>customerSalesReportServlet</servlet-name>
+		<servlet-class>servlet.CustomerSalesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>customerSalesReportServlet</servlet-name>
+		<url-pattern>/CustomerSalesServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>categorySalesReportServlet</servlet-name>
+		<servlet-class>servlet.CategorySalesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>categorySalesReportServlet</servlet-name>
+		<url-pattern>/CategorySalesServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>daySalesReportServlet</servlet-name>
+		<servlet-class>servlet.DaySalesReportServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>daySalesReportServlet</servlet-name>
+		<url-pattern>/DaySalesReportServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>addNewDiscountServlet</servlet-name>
+		<servlet-class>servlet.AddNewDiscountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>addNewDiscountServlet</servlet-name>
+		<url-pattern>/AddNewDiscountServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>availableDiscountServlet</servlet-name>
+		<servlet-class>servlet.AvailableDiscountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>availableDiscountServlet</servlet-name>
+		<url-pattern>/AvailableDiscountServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>toggleDiscountStatusServlet</servlet-name>
+		<servlet-class>servlet.ToggleDiscountStatusServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>toggleDiscountStatusServlet</servlet-name>
+		<url-pattern>/ToggleDiscountStatusServlet</url-pattern>
+	</servlet-mapping>
+
+	<listener>
+		<listener-class>servlet.MyContextListener</listener-class>
+	</listener>
+</web-app>
